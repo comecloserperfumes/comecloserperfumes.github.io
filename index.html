@@ -1,77 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Come Closer Perfumes</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff8f0;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
     header {
-      background: #000;
-      color: white;
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      background: rgba(0,0,0,0.6);
       padding: 20px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+    .product {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      margin: 15px;
+      width: 200px;
       text-align: center;
+      padding: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
     }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
     }
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: url('https://images.unsplash.com/photo-1585386959984-a4155224f1f5') no-repeat center center/cover;
+    .product h2 {
+      font-size: 1.2rem;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 0;
+      color: #ccc;
+    }
+    .whatsapp {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px;
+    }
+    .whatsapp a {
+      background-color: #25D366;
       color: white;
-    }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    .btn {
-      background: #d4a373;
-      padding: 10px 20px;
-      border: none;
-      color: white;
-      font-size: 1em;
-      border-radius: 5px;
+      padding: 12px 20px;
       text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
     }
     footer {
-      background: #000;
-      color: white;
+      background: #222;
       text-align: center;
-      padding: 10px;
-      margin-top: 40px;
+      padding: 20px;
+      margin-top: 30px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Come Closer Perfumes</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="mailto:comecloserperfumes@gmail.com">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Experience Luxury in Every Drop</h1>
-    <p>Attars • Bakhoor • Scented Candles • Room Fresheners</p>
-    <a href="shop.html" class="btn">Shop Now</a>
-  </section>
+<header>
+  <h1>Come Closer Perfumes</h1>
+</header>
 
-  <footer>
-    &copy; 2025 Come Closer Perfumes. All rights reserved.
-  </footer>
+<section class="products">
+  <div class="product">
+    <img src="golden_oudh.jpg" alt="Golden Oudh">
+    <h2>Golden Oudh</h2>
+    <p>₹349</p>
+  </div>
+  <div class="product">
+    <img src="marry_me.jpg" alt="Marry Me">
+    <h2>Marry Me</h2>
+    <p>₹249</p>
+  </div>
+  <div class="product">
+    <img src="signature.jpg" alt="Signature">
+    <h2>Signature</h2>
+    <p>₹549</p>
+  </div>
+  <div class="product">
+    <img src="addiction.jpg" alt="Addiction">
+    <h2>Addiction</h2>
+    <p>₹299</p>
+  </div>
+  <div class="product">
+    <img src="sea_water.jpg" alt="Sea Water">
+    <h2>Sea Water</h2>
+    <p>₹249</p>
+  </div>
+</section>
+
+<div class="whatsapp">
+  <a href="https://wa.me/919164647437" target="_blank">Chat with Ameer</a>
+  <a href="https://wa.me/919686574281" target="_blank">Chat with Ateeq</a>
+</div>
+
+<footer>
+  &copy; 2025 Come Closer Perfumes. All rights reserved.
+</footer>
+
 </body>
 </html>
